@@ -1,0 +1,99 @@
+.blog {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__description {
+        color: #19191b66;
+        margin-top: 18px;
+        font-size: 20px;
+        font-weight: 400;
+        max-width: 650px;
+    }
+
+    &__blogs {
+        margin-top: 50px;
+        width: 100%;
+
+        &__flex {
+            display: flex;
+        }
+
+        &__filter {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background-color: rgb(0, 0, 0, 0.4);
+        }
+
+        &__body {
+            z-index: 1;
+            position: absolute;
+            color: white;
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            padding: 30px 25px;
+
+            &__horizontal {
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+            }
+
+            &__title {
+                font-size: 30px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            &__description {
+                font-size: 18px;
+                font-weight: 300;
+                margin-top: 10px;
+                max-width: 300px;
+            }
+        }
+
+        &__first {
+            cursor: pointer;
+            position: relative;
+            background-image: url("../../../../assets/landing/guajira.jpg");
+            height: 840px;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 5px;
+        }
+
+        &__second {
+            cursor: pointer;
+            position: relative;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            border-radius: 5px;
+
+            &--santa-marta {
+                background-image: url("../../../../assets/landing/santa-marta.jpg");
+            }
+
+            &--purace {
+                margin-top: 40px;
+                background-image: url("../../../../assets/landing/purace.jpg");
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .blog__blogs__first {
+        height: 400px;
+        margin-bottom: 40px;
+    }
+}

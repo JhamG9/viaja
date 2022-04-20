@@ -1,0 +1,44 @@
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+
+        i {
+            margin-right: 8px;
+            font-size: 25px;
+        }
+
+        &__label {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        flex-flow: wrap;
+        justify-content: center;
+
+        &__item {
+            margin: 5px 10px;
+            font-size: 16px;
+            color: #54595f;
+            cursor: pointer;
+            text-align: center;
+
+            &:hover {
+                transition: 0.4s;
+                font-weight: bold;
+
+                color: darken(#54595f, 40);
+            }
+        }
+    }
+}
