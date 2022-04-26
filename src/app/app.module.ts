@@ -8,6 +8,8 @@ import { HeaderComponent } from './modules/landing/header/header.component';
 import { BodyComponent } from './modules/landing/body/body.component';
 import { OurBlogsComponent } from './modules/landing/our-blogs/our-blogs.component';
 import { AboutUsComponent } from './modules/landing/about-us/about-us.component';
+import { PhraseComponent } from './modules/landing/phrase/phrase.component';
+import { FooterComponent } from './modules/landing/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AboutUsComponent } from './modules/landing/about-us/about-us.component'
     HeaderComponent,
     BodyComponent,
     OurBlogsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    PhraseComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

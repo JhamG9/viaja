@@ -1,0 +1,46 @@
+.footer {
+    margin-top: 100px;
+    padding: 40px 0;
+    background-color: #0d1436;
+}
+
+.item {
+    color: white;
+
+    &__label {
+        &__divider {
+            width: 80px;
+            border: 1px solid #ff1d52;
+        }
+    }
+
+    &__options {
+        margin-top: 10px;
+
+        &--icons {
+            display: flex;
+        }
+
+        &__icon {
+            border-radius: 50%;
+            border: 1px solid white;
+            width: 35px;
+            height: 35px;
+            margin: 0 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0d1436;
+            background-color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        &__act {
+            padding: 5px 0;
+            font-weight: 300;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    }
+}
