@@ -50,6 +50,22 @@
     }
 }
 
+.rights {
+    margin-top: 30px;
+
+    &__divider {
+        width: 100%;
+        border-top: 1px solid white;
+    }
+
+    &__text {
+        color: white;
+        font-size: 15px;
+        margin-top: 15px;
+        font-weight: 300;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .item {
         margin-bottom: 30px;
