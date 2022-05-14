@@ -17,6 +17,7 @@
             text-transform: uppercase;
             font-weight: bold;
             text-align: center;
+            line-height: 24px;
         }
     }
 
@@ -40,5 +41,24 @@
                 color: darken(#54595f, 40);
             }
         }
+    }
+
+    &__icon-menu {
+        display: none;
+        align-items: center;
+        font-size: 25px;
+        color: #54595f;
+        cursor: pointer;
+        padding: 5px 15px 5px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__actions {
+        display: none;
+    }
+
+    .header__icon-menu {
+        display: flex;
     }
 }
