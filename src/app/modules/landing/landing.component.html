@@ -1,5 +1,7 @@
 <mat-drawer-container>
-    <mat-drawer mode="over" opened="{{sideNavService.openedSideNav}}" (closedStart)="closeSideNav()">Drawer content</mat-drawer>
+    <mat-drawer mode="over" opened="{{sideNavService.openedSideNav}}" (closedStart)="closeSideNav()">
+        <app-options-mobile></app-options-mobile>
+    </mat-drawer>
     <mat-drawer-content>
         <app-header></app-header>
         <app-body></app-body>

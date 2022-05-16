@@ -1,0 +1,9 @@
+.actions {
+    padding-top: 10px;
+
+    &__item {
+        border-bottom: 1px solid gray;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+}
