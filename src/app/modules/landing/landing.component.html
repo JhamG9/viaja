@@ -1,17 +1,9 @@
-<mat-drawer-container>
-    <mat-drawer mode="over" opened="{{sideNavService.openedSideNav}}" (closedStart)="closeSideNav()">
-        <app-options-mobile></app-options-mobile>
-    </mat-drawer>
-    <mat-drawer-content>
-        <app-header></app-header>
-        <app-body></app-body>
+<app-body></app-body>
 
-        <div class="container">
-            <app-our-blogs></app-our-blogs>
-            <app-about-us></app-about-us>
-            <app-phrase></app-phrase>
-        </div>
+<div class="container">
+    <app-our-blogs></app-our-blogs>
+    <app-about-us></app-about-us>
+    <app-phrase></app-phrase>
+</div>
 
-        <app-footer></app-footer>
-    </mat-drawer-content>
-</mat-drawer-container>
+<app-footer></app-footer>

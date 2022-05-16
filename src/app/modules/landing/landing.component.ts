@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SideNavService } from '../../services/side-nav.service';
 
 @Component({
   selector: 'app-landing',
@@ -8,12 +7,9 @@ import { SideNavService } from '../../services/side-nav.service';
 })
 export class LandingComponent implements OnInit {
 
-  constructor(public sideNavService: SideNavService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  closeSideNav() {
-    this.sideNavService.closeSideNav();
-  }
 }
