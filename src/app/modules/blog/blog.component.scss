@@ -1,8 +1,13 @@
+img {
+    max-width: 100%;
+}
 .cnt-blog {
     padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 50px;
 
     &__label {
-        font-size: 30px;
         font-weight: 400;
         text-align: center;
         text-transform: uppercase;
@@ -12,8 +17,8 @@
         margin-top: 40px;
 
         &__label {
-            font-size: 24px;
-            font-weight: 400;
+            font-weight: 300;
+            margin-bottom: 5px;
         }
 
         &__value {
@@ -22,5 +27,45 @@
             font-weight: 500;
             color: #ff1d52;
         }
+    }
+    &__img {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.8;
+    color: #000000;
+}
+
+.table-content {
+    margin-top: 30px;
+
+    &__title {
+        text-transform: uppercase;
+    }
+}
+
+.divider {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.content {
+    margin-top: 30px;
+
+    &__how-arrive {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cnt-blog {
+        padding-top: 20px;
     }
 }

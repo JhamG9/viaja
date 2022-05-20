@@ -12,4 +12,8 @@ export class BlogComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollTo(element: HTMLElement){
+    element.scrollIntoView({behavior: 'smooth'});
+  }
+
 }

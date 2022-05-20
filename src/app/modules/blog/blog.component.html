@@ -1,10 +1,49 @@
-<div class="container">
-    <div class="cnt-blog">
-        <p class="cnt-blog__label">Salinas de Manaure</p>
-    </div>
-
+<div class="cnt-blog">
+    <h2 class="cnt-blog__label">Salinas de Manaure</h2>
     <div class="cnt-blog__date">
-        <p class="cnt-blog__date__label">Fecha.</p>
+        <h3 class="cnt-blog__date__label">Fecha.</h3>
         <p class="cnt-blog__date__value">Noviembre, 2021</p>
     </div>
-</div>
+    <img class="cnt-blog__img" src="./assets/images/blogs/manaure/manaure-principal.jpg" />
+
+    <div class="container">
+        <p class="description">
+            Manaure es conocido por tener las salinas mas importantes del país, <b>Las salinas de Manaure</b>
+            sus piscinas compuestas de sal dan un increible espectaculo color rojizo en sus aguas.
+            <br />
+            <b>¿Estás pensando en ir?</b> entonces continua leyendo esta guía de viaje y preparate para un <b>¡Empezamos
+                otra aventura!</b>
+        </p>
+
+        <div class="table-content">
+            <h5 class="table-content__title">Tabla de contenido:</h5>
+            <ul>
+                <li (click)="scrollTo(about)">Un poco de Manaure</li>
+                <li>Como llegar a Manaure.</li>
+                <li>Conclusiones.</li>
+            </ul>
+        </div>
+
+        <div class="divider"></div>
+        <img src="./assets/images/blogs/manaure/i-love-manaure.jpg" />
+
+        <div class="content">
+            <div #about>
+                <h3 class="content__title">Un poco de Manaure.</h3>
+                <p class="description">
+                    Manaure es un municipio colombiano del departamento de La Guajira reconocido
+                    por encontrarse en este las salinas marítimas más importantes del país.
+                    La cabecera urbana tiene el núcleo de población más grande del desierto de La Guajira.</p>
+                <p class="description">
+                    Manaure tiene un clima cálido tropical, refrescado por las brisas marinas del noreste; permanece
+                    todo el año con temperaturas que oscilan entre los 28 °C y los 38 °C.
+                </p>
+            </div>
+
+            <div class="content__how-arrive">
+                <h3 class="content__title">¿Como llegar a Manaure?</h3>
+
+            </div>
+        </div>
+
+    </div>

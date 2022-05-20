@@ -62,7 +62,7 @@
         &__first {
             cursor: pointer;
             position: relative;
-            background-image: url("../../../../assets/landing/guajira.jpg");
+            background-image: url("../../../../assets/images/landing/guajira.jpg");
             height: 840px;
             background-position: right;
             background-repeat: no-repeat;
@@ -80,12 +80,12 @@
             border-radius: 5px;
 
             &--santa-marta {
-                background-image: url("../../../../assets/landing/santa-marta.jpg");
+                background-image: url("../../../../assets/images/landing/santa-marta.jpg");
             }
 
             &--purace {
                 margin-top: 40px;
-                background-image: url("../../../../assets/landing/purace.jpg");
+                background-image: url("../../../../assets/images/landing/purace.jpg");
             }
         }
     }
