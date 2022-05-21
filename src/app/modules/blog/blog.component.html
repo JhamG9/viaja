@@ -1,49 +1,132 @@
-<div class="cnt-blog">
-    <h2 class="cnt-blog__label">Salinas de Manaure</h2>
-    <div class="cnt-blog__date">
-        <h3 class="cnt-blog__date__label">Fecha.</h3>
-        <p class="cnt-blog__date__value">Noviembre, 2021</p>
-    </div>
-    <img class="cnt-blog__img" src="./assets/images/blogs/manaure/manaure-principal.jpg" />
-
-    <div class="container">
-        <p class="description">
-            Manaure es conocido por tener las salinas mas importantes del país, <b>Las salinas de Manaure</b>
-            sus piscinas compuestas de sal dan un increible espectaculo color rojizo en sus aguas.
-            <br />
-            <b>¿Estás pensando en ir?</b> entonces continua leyendo esta guía de viaje y preparate para un <b>¡Empezamos
-                otra aventura!</b>
-        </p>
-
-        <div class="table-content">
-            <h5 class="table-content__title">Tabla de contenido:</h5>
-            <ul>
-                <li (click)="scrollTo(about)">Un poco de Manaure</li>
-                <li>Como llegar a Manaure.</li>
-                <li>Conclusiones.</li>
-            </ul>
+<div class="body-content">
+    <div class="cnt-blog">
+        <h2 class="cnt-blog__label">Salinas de Manaure</h2>
+        <div class="cnt-blog__date">
+            <h3 class="cnt-blog__date__label">Fecha.</h3>
+            <p class="cnt-blog__date__value">Noviembre, 2021</p>
         </div>
+        <img class="cnt-blog__img" src="./assets/images/blogs/manaure/manaure-principal.jpg" />
 
-        <div class="divider"></div>
-        <img src="./assets/images/blogs/manaure/i-love-manaure.jpg" />
+        <div class="container cnt-blog__container">
+            <p class="description">
+                Manaure es conocido por tener las salinas mas importantes del país, <b>Las salinas de Manaure</b>
+                sus piscinas compuestas de sal dan un increible espectaculo color rojizo en sus aguas.
+                <br />
+                <b>¿Estás pensando en ir?</b> entonces continua leyendo esta guía de viaje y preparate para un
+                <b>¡Empezamos
+                    otra aventura!</b>
+            </p>
 
-        <div class="content">
-            <div #about>
-                <h3 class="content__title">Un poco de Manaure.</h3>
-                <p class="description">
-                    Manaure es un municipio colombiano del departamento de La Guajira reconocido
-                    por encontrarse en este las salinas marítimas más importantes del país.
-                    La cabecera urbana tiene el núcleo de población más grande del desierto de La Guajira.</p>
-                <p class="description">
-                    Manaure tiene un clima cálido tropical, refrescado por las brisas marinas del noreste; permanece
-                    todo el año con temperaturas que oscilan entre los 28 °C y los 38 °C.
-                </p>
+            <div class="table-content">
+                <h5 class="table-content__title">Tabla de contenido:</h5>
+                <ul>
+                    <li (click)="scrollTo(about)">
+                        <p class="table-content__options">Un poco de Manaure</p>
+                    </li>
+                    <li (click)="scrollTo(arrive)">
+                        <p class="table-content__options">¿Como llegar?</p>
+                    </li>
+
+                    <li (click)="scrollTo(whatToDo)">
+                        <p class="table-content__options">¿Que hacer?</p>
+                    </li>
+                    <li (click)="scrollTo(conclutions)">
+                        <p class="table-content__options">Conclusiones</p>
+                    </li>
+                </ul>
             </div>
 
-            <div class="content__how-arrive">
-                <h3 class="content__title">¿Como llegar a Manaure?</h3>
+            <div class="divider"></div>
+            <img src="./assets/images/blogs/manaure/i-love-manaure.jpg" />
 
+            <div class="content">
+                <div #about>
+                    <h3 class="content__title">Un poco de Manaure.</h3>
+                    <p class="description">
+                        Manaure es un municipio colombiano del departamento de La Guajira reconocido
+                        por encontrarse en este las salinas marítimas más importantes del país.
+                        La cabecera urbana tiene el núcleo de población más grande del desierto de La Guajira.</p>
+                    <p class="description">
+                        Manaure tiene un clima cálido tropical, refrescado por las brisas marinas del noreste; permanece
+                        todo el año con temperaturas que oscilan entre los 28 °C y los 38 °C.
+                    </p>
+                </div>
+
+                <div class="content__img-about">
+                    <img class="" src="./assets/images/blogs/manaure/iglesia-manaure.jpg" />
+                </div>
+
+                <div class="content__how-arrive" #arrive>
+                    <h3 class="content__title">¿Como llegar a Manaure?</h3>
+                    <p class="description">
+                        Para llegar a Manaure debes llegar al mercado viejo de Riohacha,
+                        en donde salen carros particulares o rutas por un valor de $25.000 COP,
+                        te recomiendo salir con tiempo ya que el carro inicia el recorrido
+                        con el cupo completo, esto puede llevarte unos minutos adicionales.
+                    </p>
+                    <p class="description">
+                        Para llegar al mercado viejo puedes tomar un taxi por $5.000 COP
+                        o una moto por $3.000 COP indicandoles que te dejen donde salen los carros a Manaure.
+                    </p>
+                    <p class="description">
+                        Como recomendación recuerda salir unos minutos antes ya que el carro inicial el recorrido
+                        una vez lleno el cupo, en mi caso debi esperar unos 20 minutos aproximandamente
+                    </p>
+
+                    <div class="mt-2">
+                        <img src="./assets/images/blogs/manaure/manaure-drone.jpg" alt="manure drone">
+                    </div>
+                </div>
+
+                <div class="content__what-to-do" #whatToDo>
+                    <h3 class="content__title">¿Que hacer en Manaure?</h3>
+                    <p class="description">
+                        En este lugar se encuentran las salinas, asi que una vez en Manaure dile al conductor del
+                        vehículo que te deje en este lugar,
+                        fui el ultimo en bajar asi que me dijo: "Si quiere le hago el tour y luego te dejo
+                        en las playas de Mayapo, quedan de camino a Riohacha y me pagas el valor del pasaje a Riohacha"
+                        (el mismo valor de los $25.000 COP)
+                        <br />
+                        La verdad tuve la suerte de dar con esta persona y el tambien aseguro el cupo de vuelta conmigo.
+                    </p>
+
+                    <img class="mt-2" src="./assets/images/blogs/manaure/guia.jpg" />
+                    <img class="mt-4" src="./assets/images/blogs/manaure/salinas-drone-1.jpg" />
+                    <img class="mt-4" src="./assets/images/blogs/manaure/manaure-salinas.jpg" />
+                </div>
+
+                <div class="content__conclutions" #conclutions>
+                    <h3 class="content__title">Conclusiones</h3>
+                    <p class="description">
+                        Pues que te puedo decir... este es un lugar muy bonito de la Guajira lleno de historias,
+                        experiencias y
+                        personas por conocer, asi que te invito para observar los colores de la naturaleza y conocer un
+                        poco mas de Colombia.
+                    </p>
+
+                    <p class="description">
+                        Recuerda llevar ropa que cubra tu cuerpo, protector solar, agua y una gorra para protegerte del
+                        sol, en este lugar hace muchisimo calor como sol, asi que no lo olvides ; )
+                    </p>
+                    <img class="mt-2" src="./assets/images/blogs/manaure/salinas-drone-2.jpg" />
+                    <img class="mt-4" src="./assets/images/blogs/manaure/salinas-drone-3.jpg" />
+
+                    <div class="divider"></div>
+                    <p class="description">
+                        Esta foto fue de camino a Riohacha los atardeceres que ofrece esta Region son
+                        increibles
+                    </p>
+                    <img class="mt-4" src="./assets/images/blogs/manaure/sunset-car.jpg" />
+                    <p class="description">
+                        No siendo mas nos vemos en otro blog, recuerda seguirme en instagram como
+                        <a href="https://www.instagram.com/losviajesdejham/" target="_blank">@losviajesdejham</a>
+                        para ver mas fotos y datos de mis viajes :) <br />
+                        ¡chao chao!
+                    </p>
+
+                </div>
             </div>
         </div>
-
     </div>
+</div>
+<app-footer></app-footer>

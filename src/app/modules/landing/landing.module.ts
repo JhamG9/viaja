@@ -5,8 +5,8 @@ import { BodyComponent } from './body/body.component';
 import { OurBlogsComponent } from './our-blogs/our-blogs.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { PhraseComponent } from './phrase/phrase.component';
-import { FooterComponent } from './footer/footer.component';
 import { LandingRoutingModule } from './landing-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +15,10 @@ import { LandingRoutingModule } from './landing-routing.module';
     OurBlogsComponent,
     AboutUsComponent,
     PhraseComponent,
-    FooterComponent,
   ],
   imports: [
     CommonModule,
+    SharedModule,
     LandingRoutingModule
   ]
 })

@@ -1,11 +1,22 @@
 img {
     max-width: 100%;
 }
+
+.body-content {
+    display: flex;
+    justify-content: center;
+}
+
 .cnt-blog {
     padding-top: 50px;
     padding-left: 5%;
     padding-right: 5%;
     margin-bottom: 50px;
+    max-width: 990px;
+
+    &__container {
+        margin-top: 30px;
+    }
 
     &__label {
         font-weight: 400;
@@ -35,7 +46,7 @@ img {
 }
 
 .description {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 17px;
     font-weight: 200;
     line-height: 1.8;
@@ -48,6 +59,12 @@ img {
     &__title {
         text-transform: uppercase;
     }
+
+    &__options {
+        color: #0d6efd;
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
 .divider {
@@ -57,10 +74,23 @@ img {
 }
 
 .content {
-    margin-top: 30px;
+    margin-top: 40px;
 
+    &__img-about {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
     &__how-arrive {
-        margin-top: 30px;
+        margin-top: 50px;
+    }
+
+    &__what-to-do {
+        margin-top: 50px;
+    }
+
+    &__conclutions {
+        margin-top: 50px;
     }
 }
 

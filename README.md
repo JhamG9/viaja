@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Images
 Horizontal = 1920px * 1080px
-Vertical  = 1080px * 1620px
+Vertical  = 1080px * 1420px
