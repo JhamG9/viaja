@@ -1,0 +1,101 @@
+img {
+    max-width: 100%;
+}
+
+.body-content {
+    display: flex;
+    justify-content: center;
+}
+
+.cnt-blog {
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 50px;
+    max-width: 990px;
+
+    &__container {
+        margin-top: 30px;
+    }
+
+    &__label {
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__date {
+        margin-top: 40px;
+
+        &__label {
+            font-weight: 300;
+            margin-bottom: 5px;
+        }
+
+        &__value {
+            margin-top: -5px;
+            font-size: 17px;
+            font-weight: 500;
+            color: #ff1d52;
+        }
+    }
+    &__img {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.8;
+    color: #000000;
+}
+
+.table-content {
+    margin-top: 30px;
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__options {
+        color: #0d6efd;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.divider {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.content {
+    margin-top: 40px;
+
+    &__img-about {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    &__how-arrive {
+        margin-top: 50px;
+    }
+
+    &__what-to-do {
+        margin-top: 50px;
+    }
+
+    &__conclutions {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cnt-blog {
+        padding-top: 20px;
+    }
+}
