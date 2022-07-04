@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxMasonryModule } from 'ngx-masonry';
-import { BlogComponent } from './blog.component';
-import { BlogRoutingModule } from './blog-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { BlogsRoutingModule } from './blogs-routing.module';
+import { BlogsComponent } from './blogs.component';
 
 @NgModule({
   declarations: [
-    BlogComponent
+    BlogsComponent
   ],
   imports: [
     CommonModule,
     NgxMasonryModule,
     SharedModule,
-    BlogRoutingModule
+    BlogsRoutingModule
   ]
 })
-export class BlogModule { }
+export class BlogsModule { }
